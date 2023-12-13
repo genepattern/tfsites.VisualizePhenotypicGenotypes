@@ -1,0 +1,21 @@
+# Run this gpunit localy by calling:
+# ant -f ${GPUNIT_HOME}/build.xml -Dgpunit.diffStripTrailingCR="--strip-trailing-cr" -Dgp.host="127.0.0.1" -Dgp.url="http://127.0.0.1:8080" -Dgp.user="edjuaro@gmail.com" -Dgp.password="" -Dgpunit.testfolder=`pwd` gpunit
+# OR using gp-beta-ami:
+# ant -f ${GPUNIT_HOME}/build.xml -Dgpunit.diffStripTrailingCR="--strip-trailing-cr" -Dgp.host="beta.genepattern.org" -Dgp.url="https://beta.genepattern.org" -Dgp.user="**USERNAME**" -Dgp.password="**PUT_PASSWORD_HERE" -Dgpunit.testfolder=`pwd` gpunit
+
+#
+# Note: this test uses a custom diff command
+#
+
+name: "tfsites.VisualizePhenotypicGenotypes - Basic test"
+module: tfsites.VisualizePhenotypicGenotypes
+params:
+    input.data: "data/11-input_gwas-all-snvs.tsv"
+    zoom: "chr17:6550000-6850000"
+    bed.files: "data/11-input_chr17.bed"
+    gff.files: "data/11-input_gff_file.gff3"
+    gff.file.commands: "data/11-gffcommands.txt"
+    out.filename:  "11-output_gwas-snv-effects.png"
+assertions:
+    jobStatus: success
+

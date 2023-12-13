@@ -1,0 +1,1 @@
+11-input_gff_file.gff3=feature_col:2,chr_col:0,start_col:3,end_col:4,skiplines:0
