@@ -5,7 +5,7 @@ LSID=urn:lsid:genepattern.org:module.analysis:00450
 author=
 commandLine=python /build/tfsites-webportal/11-visualizeGenotypeSnvEffects/11-visualizeGenotypeSnvEffects.py  -f <input.data> -z <zoom>  -C <bed.files>  -o <out.filename>  -D <gff.files> <beta>  -G <gff.file.commands>      
 cpuType=any
-description=Creates a visualization showing all SNV effects that overlap with genotypes
+description=Graphs the effects of SNV mutations from a GWAS or eQTL dataset. The graph displays the p-value of each mutation along a genomic region of interest. The data points are colored according to the effect of the SNV. Possible mutation effects include increasing (optimizing) the affinity, decreasing (sub-optimizing) the affinity, deleting a binding site, or creating a binding site. Genomic regions of interest, such as intervals that contain exons, can be indicated on the plot.
 documentationUrl=https://genepattern.github.io/tfsites.VisualizePhenotypicGenotypes/v1/
 fileFormat=
 job.cpuCount=
@@ -129,7 +129,7 @@ p7_value=
 
 privacy=public
 quality=development
-src.repo=
+src.repo=https://github.com/genepattern/tfsites.VisualizePhenotypicGenotypes
 taskDoc=
 taskType=Transciption factor analysis
 userid=ted
