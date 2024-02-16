@@ -38,7 +38,7 @@ Within the genomic region being plotted, if there are intervals from the input B
     - `default = None`
     - This file contains genomic feature annotations, along with their position in the genome.
 - <span style="color: red;">*</span>**Scatterplot of SNV Effects (.png)**
-    - Run in beta mode if TRUE.
+    - Name of the output file containing the scatterplot that displays all mutations from the input file and their SNV effects.
  
 ### Other Parameters
 
